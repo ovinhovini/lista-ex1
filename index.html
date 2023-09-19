@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+      <div class="menu">
+        <button onclick="Atividade1()"><i class="fa-solid fa-book"></i>Atividade 1</button>
+        <button onclick="Atividade2()"><i class="fa-solid fa-book"></i>Atividade 2</button>
+        <button onclick="Atividade3()"><i class="fa-solid fa-book"></i>Atividade 3</button>
+        <button onclick="Atividade4()"><i class="fa-solid fa-book"></i>Atividade 4</button>
+        <button class="clear-button" onclick="window.location.reload()"><i class="fa-solid fa-trash"></i>Limpar Console</button>
+      </div>
 
+      <section>
+        <div class="card-activities" id="atividade1">
+          <h1>Insira um valor entre 0 e 10:</h1>
+          <input id="valor-input" type="text" placeholder="Insira o valor">
+          <button onclick="getValue()">Enviar</button>
+        </div>  
+        
+        <div class="card-activities" id="atividade2">
+          <h1>Contagem Regressiva para o Ano Novo:</h1>
+          <div id="timer"></div>
+          <button onclick="startTimer()">Inciar Contagem Regressiva</button>
+        </div>
+
+        <div class="card-activities" id="atividade3">
+          <h1>Faça login com usuário e senha:</h1>
+          <input type="text" id="usuario-input" placeholder="Insira o usuário">
+          <input type="text" id="senha-input" placeholder="Insira a senha">
+          <button onclick="enviar()">Entrar</button>
+          <div id="resultLogin"></div>
+        </div>
+
+        <div class="card-activities" id="atividade4">
+          <h1>Calcular 2 Valores:</h1>
+          <input type="text" id="valor1-input" placeholder="Insira o primeiro valor">
+          <input type="text" id="valor2-input" placeholder="Insira o segundo valor">
+          <button onclick="CalcularValores()">Calcular</button>
+          <div id="resultCalc"></div>
+        </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
